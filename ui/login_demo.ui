@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>522</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>sans-serif</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLineEdit{
+background: transparent;
+border: none;
+border-bottom: 1px solid rgba(0, 0, 0, 155);
+font-family: sans-serif;
+}
+QMainWindow{
+background: rgb(0, 80, 106);
+font-family: sans-serif;
+}
+
+QGroupBox{
+background: white;
+border: 1px solid rgba(255, 255, 255, 200);
+font-family: sans-serif;
+border-radius:5px;
+}
+QGroupBox#statusBox{
+border-radius: 0px;
+}
+QPushButton#exitButton, QPushButton#minimizeButton{
+border-radius: 0px;
+border: none;
+background: transparent;
+}
+QPushButton#exitButton:hover{
+background: rgb(255, 46, 46);
+}
+QPushButton#minimizeButton:hover{
+background: rgb(223, 223, 223);
+}
+QPushButton:hover{
+background: rgb(75, 195, 220);
+border: none;
+}
+
+QPushButton{
+background: rgb(58, 180, 208);
+border-radius: 10px;
+border: 1px solid rgb(18, 140, 168);
+font-family: sans-serif;
+}
+
+QTableView, QListView{
+background: transparent;
+font-family: sans-serif;
+height: 111px;
+border-radius:5px;
+outline: 0;
+spacing: 10px;
+}
+
+QAbstractItemView{
+background:transparent;
+outline: 0;
+
+}
+
+QAbstractItemView:item{
+background: rgb(58, 180, 208);
+border-radius: 5px;
+padding:5px;
+outline: 0;
+color: black;
+margin: 2px;
+
+}
+
+QAbstractItemView:item:hover{
+background: rgb(75, 195, 220);
+}
+
+QAbstractItemView:item:selected{
+background: rgb(75, 195, 220);
+}
+QTableCornerButton::section{
+background: transparent;
+}
+QProgressBar {
+    border: 2px solid grey;
+    border-radius: 5px;
+    text-align: center;
+}
+
+QProgressBar::chunk {
+    background-color: #05B8CC;
+    width: 20px;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>761</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QPushButton" name="tButton">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>40</y>
+       <width>401</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>sans-serif</family>
+       <pointsize>35</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>👨‍🏫 Учитель</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="sButton">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>230</y>
+       <width>401</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>sans-serif</family>
+       <pointsize>35</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>👤 Ученик</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>400</y>
+       <width>761</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Georgia</family>
+      </font>
+     </property>
+     <property name="text">
+      <string>*Это демонстрационная версия, в полной
+версии доступны личные аккаунты.</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="account">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>40</y>
+       <width>241</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>sans-serif</family>
+      </font>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QLabel" name="avatar">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>161</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>120</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>☒</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>221</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Тестовый аккаунт
+Почта: sample@email.com</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chatButton">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>290</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Общий чат</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="statusBox">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>800</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>5</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Georgia</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Проект</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="minimizeButton">
+     <property name="geometry">
+      <rect>
+       <x>740</x>
+       <y>0</y>
+       <width>30</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>—</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="exitButton">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>0</y>
+       <width>30</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>sans-serif</family>
+      </font>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
